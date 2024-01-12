@@ -216,6 +216,9 @@ IGL_INLINE bool igl::decimate(
         clean_finish = true;
         break;
       }
+
+      // Print the information about the collapsed edge
+      std::cout << "Collapsed Edge: " << e << " Vertices: " << e1 << ", " << e2 << " Faces: " << f1 << ", " << f2 << std::endl;
     }else
     {
       if(e == -1)
